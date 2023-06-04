@@ -1,0 +1,115 @@
+
+Bus 001 Device 005: ID 0944:0117 KORG, Inc. nanoKONTROL2 MIDI Controller
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               1.10
+  bDeviceClass            0 
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 
+  bMaxPacketSize0         8
+  idVendor           0x0944 KORG, Inc.
+  idProduct          0x0117 nanoKONTROL2 MIDI Controller
+  bcdDevice            1.00
+  iManufacturer           1 KORG INC.
+  iProduct                2 nanoKONTROL2
+  iSerial                 0 
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength       0x0053
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0x80
+      (Bus Powered)
+    MaxPower              100mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           2
+      bInterfaceClass         1 Audio
+      bInterfaceSubClass      3 MIDI Streaming
+      bInterfaceProtocol      0 
+      iInterface              0 
+      MIDIStreaming Interface Descriptor:
+        bLength                 7
+        bDescriptorType        36
+        bDescriptorSubtype      1 (HEADER)
+        bcdADC               1.00
+        wTotalLength       0x0025
+      MIDIStreaming Interface Descriptor:
+        bLength                 6
+        bDescriptorType        36
+        bDescriptorSubtype      2 (MIDI_IN_JACK)
+        bJackType               1 Embedded
+        bJackID                16
+        iJack                   3 nanoKONTROL2 _ CTRL
+      MIDIStreaming Interface Descriptor:
+        bLength                 9
+        bDescriptorType        36
+        bDescriptorSubtype      3 (MIDI_OUT_JACK)
+        bJackType               2 External
+        bJackID                64
+        bNrInputPins            1
+        baSourceID( 0)         16
+        BaSourcePin( 0)         1
+        iJack                   4 EXT0
+      MIDIStreaming Interface Descriptor:
+        bLength                 9
+        bDescriptorType        36
+        bDescriptorSubtype      3 (MIDI_OUT_JACK)
+        bJackType               1 Embedded
+        bJackID                48
+        bNrInputPins            1
+        baSourceID( 0)         32
+        BaSourcePin( 0)         1
+        iJack                   5 nanoKONTROL2 _ SLIDER/KNOB
+      MIDIStreaming Interface Descriptor:
+        bLength                 6
+        bDescriptorType        36
+        bDescriptorSubtype      2 (MIDI_IN_JACK)
+        bJackType               2 External
+        bJackID                32
+        iJack                   4 EXT0
+      Endpoint Descriptor:
+        bLength                 9
+        bDescriptorType         5
+        bEndpointAddress     0x02  EP 2 OUT
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               0
+        bRefresh                0
+        bSynchAddress           0
+        MIDIStreaming Endpoint Descriptor:
+          bLength                 5
+          bDescriptorType        37
+          bDescriptorSubtype      1 (GENERAL)
+          bNumEmbMIDIJack         1
+          baAssocJackID( 0)      16
+      Endpoint Descriptor:
+        bLength                 9
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            2
+          Transfer Type            Bulk
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               0
+        bRefresh                0
+        bSynchAddress           0
+        MIDIStreaming Endpoint Descriptor:
+          bLength                 5
+          bDescriptorType        37
+          bDescriptorSubtype      1 (GENERAL)
+          bNumEmbMIDIJack         1
+          baAssocJackID( 0)      48
+Device Status:     0x0000
+  (Bus Powered)
